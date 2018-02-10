@@ -13,12 +13,7 @@
  *= require_tree .
  *= require_self
  */
-h1{
-  color: blue;
-}
-h2{
-  color: red;
-}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
