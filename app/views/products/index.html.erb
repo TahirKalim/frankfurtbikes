@@ -4,15 +4,20 @@
   <div class="row">
     <% @products.each do |product| %>
       <div class="col-sm-2 col-md-4">
-        <h2><%= product.image_url %></h2>
+
+<%= image_tag(product.image_url, class: "img-responsive") %>
        <h2><%= product.name %></h2>
         <h3><%= product.description %></h3>
-        <h4><%= product.price%></h4>
-        <h4><%= product.colour %></h4>
+        <h4>Colour:<%= product.colour %></h4>
+        <h5>Price:<%= product.price %></h5>
       </div><!-- /col -->
     <% end %>
   </div>
 </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> styling-product
 <br>
 
 <%= link_to 'New Product', new_product_path %>
