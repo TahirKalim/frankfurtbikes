@@ -2,15 +2,7 @@
 <div class="container">
 <h1>Products</h1>
   <div class="row">
-    <% @products.each do |product| %>
-      <div class="col-sm-2 col-md-4">
-        <%= image_tag(product.image_url, class: "img-responsive") %>
-        <h4>Name:<%= product.name %></h4>
-        <h4>Description:<%= product.description %></h4>
-        <h4>Colour:<%= product.colour %></h4>
-        <h5>Price:<%= product.price %></h5>
-      </div><!-- /col -->
-    <% end %>
+    <%= render @products %>  
   </div>
 </div>
 <br>

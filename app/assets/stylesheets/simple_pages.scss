@@ -1,3 +1,27 @@
 // Place all the styles related to the simple_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// set product simple_page/index border
+.style_image {
+  border: 1px solid #000;
+}
+//set height and width of pic in carousel
+.carousel .item {
+  height: 400px;
+  width: 400px;
+}
+//fit the pic to carousel
+.carousel .imgc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 80%;
+
+}
+// remove grey verticle border from carousel pics
+.carousel-control.left,
+.carousel-control.right {
+
+    width: 0;
+}
