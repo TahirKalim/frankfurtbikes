@@ -14,3 +14,10 @@
 //= require turbolinks
 //= require jquery3
 //= require_tree .
+
+// fade out alert message instead of keeping it permanently.
+$(document).on('turbolinks:load', function(){
+    $(".alert").delay(2000).slideUp(500, function(){
+          $(".alert").alert('close');
+      });
+    });
